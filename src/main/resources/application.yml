@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/that_same_one
+    username: postgres
+    password: CODERJAVA
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        default_schema: all_schem
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+logging:
+  level:
+    producer.kafka.patient_card.service.DiseaseServiceImpl: DEBUG
+    producer.kafka.patient_card.service.PatientService: DEBUG
+  file:
+    path: C:\Users\DmitryCyber24\Desktop
+    name: application.log
+
+
